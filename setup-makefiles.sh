@@ -11,5 +11,6 @@ set -e
 export DEVICE=racer
 export DEVICE_COMMON=sm7250-common
 export VENDOR=motorola
+export VENDOR_COMMON=${VENDOR}
 
-"./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
+"./../../${VENDOR_COMMON}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
